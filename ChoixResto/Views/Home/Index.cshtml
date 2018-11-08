@@ -1,0 +1,15 @@
+﻿@model ChoixResto.ViewModels.HomeViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+
+</head>
+<body>
+    <h1>Prêts à choisir un restaurant?</h1>
+    <input type="button" alt="" value="Créer un sondage"/>
+    <br/>
+    @Html.ActionLink("Créer un restaurant", "CreerRestaurant", "Restaurant");
+    @Html.ActionLink("Modifier un restaurant", "Index", "Restaurant");
+</body>
